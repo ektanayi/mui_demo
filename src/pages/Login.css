@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&family=Poppins:ital,wght@0,300;0,500;0,600;1,300&family=Roboto&family=Rubik&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+body{
+    margin: 0;
+    color:black;
+    background-color:white;
+   height: auto;
+   font-family: 'Montserrat', sans-serif;
+}
+.login_svg{
+   
+    margin-top: 100px;
+    
+    height: auto;
+    width: 100%;
+}
+.signin-btn{
+    background-color: #FEC131;
+}
+.link{
+    text-align: right;
+    padding-bottom: 20px;
+    
+}
+
+.logo{
+    height: 80px;
+}
+.login_possition{
+    position: relative;
+    left:700px;
+    top:300px;
+}
