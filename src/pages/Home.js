@@ -1,32 +1,30 @@
 import React from 'react'
-import Header from '../components/Layout/Header';
-import Items from './Items';
-import Table from './Table';
+import Table from '../components/Layout/Table';
 import Box from '@mui/material/Box';
-import './Home.css';
+import Items from '../components/Layout/Items';
+import Layout2 from '../components/Layout/Layout2';
+
 
 const Home = () => {
 
-
   return (
-    <Box
-    sx={{
-      p: 5,
-     mt:1,
-     ml:5,
-     bgcolor: 'background.paper',
-     borderRadius: 1,
-    }}
-  >
 
-     <Header />
-    <Items />
-    <Box mt={5}>
-    <Table />  
-    </Box>
-   
-   </Box>
-   
+    <Layout2>
+      <Box
+        sx={{
+          p: 5,
+          mt: 1,
+          bgcolor: 'background.paper',
+          borderRadius: 1,
+        }}
+      >
+
+        <Items />
+        <Box mt={5}>
+          <Table />
+        </Box>
+      </Box>
+    </Layout2>
   )
 }
 
