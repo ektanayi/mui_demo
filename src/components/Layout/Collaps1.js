@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Box from '@mui/material/Box';
-import './Home.css';
+import '../../pages/Home.css';
 import Paper from '@mui/material/Paper';
 import UpdateIcon from '@mui/icons-material/Update';
 import Card from "@mui/material/Card";
@@ -14,7 +14,7 @@ import KeyboardArrowUpIcon from
     "@mui/icons-material/KeyboardArrowUp";
 import IconButton from "@mui/material/IconButton";
 
-export default function Collaps1() {
+export default function Collaps1(props) {
     const [open, setOpen] = useState(false);
     return (
 
@@ -22,7 +22,7 @@ export default function Collaps1() {
         <Card sx={{
 
             border: "1px solid rgba(211,211,211,0.6)",
-           
+          
         }}>
             <CardHeader className="collaps1"
 
@@ -37,29 +37,31 @@ export default function Collaps1() {
                         <Box 
                             sx={{
                                 display: 'flex',
-                                justifyContent: 'space-between',
+                                justifyContent: 'center',
+                                alignItems:'content',
+                                
                                 flexWrap: 'wrap',
                                 '& > :not(style)': {
                                     m: 1,
-                                    p: 1,
+                                   p:1,
                                     height: 'auto',
                                      
                                 },
                             }}
                         >
 
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />Reliance Industries</Paper>
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />Birlasoft</Paper>
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />Tata Sons</Paper>
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />Maskawala and Co.</Paper>
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />Pidilite</Paper>
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />Pidilite</Paper>
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />HPCL</Paper>
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />IOCL</Paper>
-                            <Paper elevation={3} className="paper"><UpdateIcon fontSize="small" className="iconpd" />Birlasoft sons</Paper>
+                            <Paper elevation={3} className="paper" ><UpdateIcon className="iconpd" />Reliance Industries</Paper>
+                            <Paper elevation={3} className="paper"><UpdateIcon className="iconpd" />Birlasoft</Paper>
+                            <Paper elevation={3} className="paper"><UpdateIcon className="iconpd" />Tata Sons</Paper>
+                            <Paper elevation={3} className="paper"><UpdateIcon className="iconpd" />Maskawala and Co.</Paper>
+                            <Paper elevation={3} className="paper"><UpdateIcon className="iconpd" />Pidilite</Paper>
+                            <Paper elevation={3} className="paper"><UpdateIcon className="iconpd" />Pidilite</Paper>
+                            <Paper elevation={3} className="paper"><UpdateIcon className="iconpd" />HPCL</Paper>
+                            <Paper elevation={3} className="paper"><UpdateIcon className="iconpd" />IOCL</Paper>
+                            <Paper elevation={3} className="paper"><UpdateIcon className="iconpd" />Birlasoft sons</Paper>
 
                         </Box>
-                        {open ? <KeyboardArrowUpIcon />
+                        {open ? <KeyboardArrowUpIcon/>
                             : <KeyboardArrowDownIcon />}
                     </IconButton>
 

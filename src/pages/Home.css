@@ -1,7 +1,7 @@
-
-
 .iconpd{
     margin-right: 10px;
+    font-size: small;
+   
 }
 .boxtxt{
     font-size: 15px;
@@ -12,6 +12,8 @@
 .paper{
     font-size: 12px;
     font-weight: 800;
+  
+  
 }
 .first-head{
     padding-left: 25px;
@@ -23,6 +25,13 @@
 }
 
 
+/*-----collaps1----*/
+.collaps{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 /*-----Header---------*/
 
 .main-nav{
@@ -62,7 +71,7 @@
  }
  .searchimg{
     height: 40px;
-    margin-top: 14px;
+    margin-top: 8px;
     border-radius: 0px 5px 5px 0px;
  }
 .menu-icon{
@@ -85,12 +94,11 @@ list-style-type: none;
 
     height: 30px;
 } 
-.bellicon{
-}
+
 .avatar-box{
     background-color: white;
     width: 100px;
-    height: 50px;
+    height: 55px;
     border-radius: 5px;
     border: none !important;
 }
@@ -98,6 +106,11 @@ list-style-type: none;
     border: none !important;
   }
 */
+
+
+/*--items----*/
+
+
 
 @media (max-width: 1290px) {
     .collaps1{

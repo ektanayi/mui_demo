@@ -7,7 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Chip from '@mui/material/Chip';
-import '../pages/Home.css'
+import '../../pages/Home.css';
 
 
 const ITEM_HEIGHT = 48;
@@ -60,7 +60,7 @@ export default function Chip1() {
 
   return (
     <div>
-      <FormControl sx={{ mt: 1, width: 380,height:'40px', backgroundColor: 'white',borderRadius:'5px 0px 0px 5px'}}>
+      <FormControl sx={{ mt: 1, width: 380,height:'40px', backgroundColor: 'white',borderRadius:'5px 0px 0px 5px',border:'none'}}>
     
         <Select sx={{height:"40px"}}
           labelId="demo-multiple-chip-label"

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Box from '@mui/material/Box';
-import './Home.css';
+import '../../pages/Home.css';
 import Paper from '@mui/material/Paper';
 import UpdateIcon from '@mui/icons-material/Update';
 import Card from "@mui/material/Card";
