@@ -21,8 +21,7 @@ export default function Chip1() {
         value={age}
         onChange={handleChange}
         sx={{ mt: 1,mb:1,ml:1, minWidth: 350,
-          height:'40px', 
-          borderRadius:'5px 0px 0px 5px'}} 
+          height:'40px'}} 
           size="small"
       >
         <MenuItem value="">
