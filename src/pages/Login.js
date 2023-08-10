@@ -11,16 +11,17 @@ const Login = () => {
     <div style={{backgroundImage: `url(${background})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",     
-    height:"800px" 
+    height:"680px" 
    
 }}>
 <Box
  display="flex"
  position={"absolute"}
- top={'280px'}
+ top={'240px'}
  right={'135px'}
  flexDirection={"column"}
-  maxWidth={400}
+  maxWidth={350}
+  maxHeight={400}
   padding={5}
   borderRadius={1}
   backgroundColor="white"
@@ -33,25 +34,26 @@ const Login = () => {
  }}
 >
 
-  
-<InputLabel htmlFor="component-simple" sx={{fontWeight:'800',color:'black'}}>Email Address</InputLabel>
-       <TextField 
+     <TextField 
        margin="normal"
        type={"email"}
        variant="outlined"
+       label="Email id"
        style={{
         maxWidth: '350px',
-        height:'50px'
+        border:'1px solid lightgray'
+     
  }}
        />
-       <InputLabel htmlFor="component-simple" sx={{fontWeight:'800',color:'black'}}>Password</InputLabel>
-          <TextField 
+       <TextField 
            margin="normal"
            type={"password"}
            variant="outlined"
+           label="password"
            style={{
             maxWidth: '350px',
-            height:'50px'
+            border:'1px solid lightgray'
+           
           }}/>
           <Link href="#" underline="none" className='link'>Forgot Password ?</Link>
 
@@ -67,7 +69,7 @@ const Login = () => {
             Sign in
             </Button>
 
-            <Typography variant='p' marginTop={2} textAlign="center">By registering, I acccept <strong>the terms of use</strong> and <strong>confidentiality Policy</strong></Typography>
+            <Typography variant='body2' marginTop={2} textAlign="center">By registering, I acccept <strong>the terms of use</strong> and <strong>confidentiality Policy</strong></Typography>
 
 
 </Box>
