@@ -21,6 +21,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
 import Chip1 from '../../components/Layout/Chip1';
+import Chip2 from '../../components/Layout/Chip2';
 import search from '../../images/Search.jpg';
 import header from '../../images/ic_itpa_logo.svg';
 import Badge from '@mui/material/Badge';
@@ -91,11 +92,6 @@ export default function PersistentDrawerLeft ({children}) {
     setOpen(false);
   };
 
-  const [age, setAge] = React.useState('');
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -109,7 +105,7 @@ export default function PersistentDrawerLeft ({children}) {
               onClick={handleDrawerOpen}
               edge="start"
               sx={{
-                marginRight: 5,
+               
                 ...(open && { display: 'none' }),
               }}
             >
@@ -136,34 +132,14 @@ export default function PersistentDrawerLeft ({children}) {
               <div className='menu-icon' >
                 <ul>
                   <li> 
-                  <Badge badgeContent={4} color="warning" className='bellicon'>
+                  <Badge color='warning' variant="dot">
                   <NotificationsNoneOutlinedIcon />
                 </Badge>
 
                   </li>
                   <li><img src={squareimg} alt={''} className='squareimg' /></li>
                   <li>
-                    <FormControl className="avatar-box" sx={{ m: 1, minWidth: 200 }} >
-                    <InputLabel id="demo-multiple-chip-label">
-                    
-                     </InputLabel>
-                     
-                      <Select
-                        labelId="demo-simple-select-autowidth-label"
-                        id="demo-simple-select-autowidth"
-                        value={age}
-                        onChange={handleChange}
-                        autoWidth
-                        label="Age"
-                      >
-                        <MenuItem value="">
-                          <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}> Twenty</MenuItem>
-                        <MenuItem value={21}>Twenty one</MenuItem>
-                        <MenuItem value={22}>Twenty one and a half</MenuItem>
-                      </Select>
-                    </FormControl>
+                   <Chip2 />
 
                   </li>
                 </ul>

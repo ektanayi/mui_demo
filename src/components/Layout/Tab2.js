@@ -37,7 +37,7 @@ const Tab2 = () => {
   <li className="nav-item" role="presentation">
   {
     data.map((curElm) =>
-    <button className="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><UpdateIcon className="iconpd" />{curElm.name}</button>)
+    <button className="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><UpdateIcon sx={{height:'20px'}} />{curElm.name}</button>)
   }
   </li>
   
